@@ -1,6 +1,7 @@
-# Simulador-
-# Ejemplos de caso de uso
-  # Aplicacion de puertas SWAP
+# Simulador circuito cuantico con vectores de estado
+(En el calculo de costes a veces se escribe dim para referirnos a 2^n, siendo n el numero de qubits)
+## Ejemplos de caso de uso
+  #### Aplicacion de puertas SWAP
   #PROBAMOS A INTRODUCIR EL PARAMETRO qubit EN LA FUNCION APPLYGATE.
 a=QRegistry(12,8) #Aquí hemos especificado utilizar 8 hilos, y 12 qubits
 a.apply_gate(X(), 0)
@@ -39,8 +40,8 @@ v.apply_gate(X(), 0)
 #print(a.print_state())
 print(v.bloch_sphere_parameters())
 
-# Para el caso de utilizar matrices de densidad:
-  # Probamos a hacer operaciones
+# Simulador circuito cuantico con matrices de densidad
+  ## Probamos a hacer operaciones
 
 #Crear un registro cuántico de 2 qubits
 qr = QRegistryDensity(2, num_hilos=4)
@@ -57,8 +58,8 @@ print(f"Resultado de la medida del primer qubit: {resultado}")
 #Imprimir la matriz de densidad después de la medida
 #qr.print_state()
 
-  # Caso en el que le pasamos las probabilidades de estado mezcla
-  # Estado mezcla 50% |0>, 50% |1>
+  ## Caso en el que le pasamos las probabilidades de estado mezcla
+  ## Estado mezcla 50% |0>, 50% |1>
 psi0 = np.array([1, 0], dtype=complex)
 psi1 = np.array([0, 1], dtype=complex)
 qr = QRegistryDensity(n=1, init_state=[(psi0, 0.5), (psi1, 0.5)])
