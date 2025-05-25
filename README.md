@@ -2,7 +2,7 @@
 (En el calculo de costes a veces se escribe dim para referirnos a 2^n, siendo n el numero de qubits)<br>
 El archivo Mi_simulador.ipynb es un cuaderno de jupyter notebook que contiene el mismo código que Simulador_cuantico.py, en python. Estos códigos son para trabajar con vectores de estado. <br>
 Mientras que los archivos Mi_simulador_rho.ipynb y Simulador_cuantico_rho.py son los análogos pero para matrices de densidad. <br>
-El archivo puertas.ipynb contiene las puertas para trabajar con vectores de estado, así como puertas_rho.ipynb contiene las puertas para trabajar con matrices de densidad.<br>
+El archivo puertas.ipynb contiene las puertas en formato python, así como puertas_rho.ipynb contiene las puertas en formato jupyter notebook.<br>
 
 Para el cálculo de operaciones, se puede repartir las operaciones en k hilos para acelerar el cálculo mediante el módulo de multiprocessing.<br>
 A continuación se presentan ejemplos de uso.
