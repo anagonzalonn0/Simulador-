@@ -2,10 +2,14 @@
 (En el calculo de costes a veces se escribe dim para referirnos a 2^n, siendo n el numero de qubits)
 ## Ejemplos de caso de uso
   #### Aplicacion de puertas SWAP
-  #PROBAMOS A INTRODUCIR EL PARAMETRO qubit EN LA FUNCION APPLYGATE.
-a=QRegistry(12,8) #Aquí hemos especificado utilizar 8 hilos, y 12 qubits
-a.apply_gate(X(), 0)
-#SWAP 0 1
+  #PROBAMOS A INTRODUCIR EL PARAMETRO qubit EN LA FUNCION APPLYGATE.  
+  
+a=QRegistry(12,8) #Aquí hemos especificado utilizar 8 hilos, y 12 qubits  
+
+a.apply_gate(X(), 0)  
+
+#SWAP 0 1  
+
 a.apply_gate(SWAP(), [0, 1])
 #SWAP 1 2 
 a.apply_gate(SWAP(), [1, 2])
